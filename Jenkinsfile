@@ -1,10 +1,10 @@
 pipeline {
     agent any
     tools {
-        go 'go1.14'
+        go 'Go 1.15.2'
     }
     parameters {
-        string(name: 'RECIPIENTS', defaultValue: 'wm_7an888@hotmail.com', description: 'Email for the build result')
+        string(name: 'RECIPIENTS', defaultValue: 'dockerlite@gmail.com', description: 'Email for the build result')
     }
     environment {
         GO114MODULE = 'on'
